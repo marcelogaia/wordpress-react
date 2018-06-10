@@ -1,11 +1,9 @@
-.Header-navBar {
+.Header-navbar {
 	top: 0;
     width: 100%;
-    height: 91px;
-    line-height: 91px;
+    border-bottom: 1px #a6a4a7 solid;
     position: fixed;
     background-color: white;
-    border-bottom: 1px #a6a4a7 solid;
     text-align: left;
     z-index: 10;
     font-family: 'Roboto', sans-serif;
@@ -24,4 +22,42 @@
 .Header-nav li a:hover {
 	color: navy !important;
 	text-decoration: underline;	
+}
+
+.Header-toggle {
+	margin:27px 15px;
+}
+
+.Header-toggle .icon-bar+.icon-bar {
+	margin-top:5px;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.Header .logo {
+		width:200px;
+	}
+
+	.Header-navbar {
+		height: 70px;
+		line-height: 70px;
+		border:none;
+	}
+
+	.Header-navbar .container{
+	    border-bottom: 1px #a6a4a7 solid;
+	}
+
+	.Header-navBar .navbar-header {
+	    height: 70px;
+	}
+
+	.Header-toggle {
+		margin:17px 15px;
+	}
+
+	.Header-nav li a {
+		line-height: 30px;
+		text-align: center;
+	}
 }
