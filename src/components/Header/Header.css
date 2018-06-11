@@ -15,7 +15,7 @@
 }
 
 .Header-nav li a {
-	line-height: calc(91px - 30px);
+	line-height: calc(90px - 30px);
 	font-weight: 300;
 }
 
@@ -46,6 +46,7 @@
 
 	.Header-navbar .container{
 	    border-bottom: 1px #a6a4a7 solid;
+		background-color: white;
 	}
 
 	.Header-navBar .navbar-header {
