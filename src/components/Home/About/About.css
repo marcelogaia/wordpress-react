@@ -1,0 +1,31 @@
+.About .portrait {
+    max-width: calc(100% - 20px);
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px #aaa solid;
+    display: block;
+    margin: 0 auto;
+}
+
+.About h3 {
+    text-align: left;
+    font-weight: normal;
+    margin: 40px 0 25px;
+    color: #666;
+    font-size: 1.5em;
+}
+
+.About p {
+    font-size:16px;
+}
+
+.About .social {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.About .social li {
+    display: inline-block;
+    margin-right: 20px;
+}
