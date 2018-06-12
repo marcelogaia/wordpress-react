@@ -1,0 +1,57 @@
+.Projects .img-view {
+    display: block;
+    opacity: 1;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.Projects .img-view img {
+    width: 100%;
+}
+
+.Projects .img-view .overlay {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: calc(100% - 30px);
+    height: 100%;
+    opacity: 0;
+    background: #122057;
+    transition: all .6s;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    text-align: center;
+}
+
+.Projects .img-view:hover .overlay {
+    opacity: .7;
+}
+
+.Projects .img-view .overlay h3 {
+    color: #ffffff;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    opacity: 1.0 !important;
+}
+
+.Projects .img-view .overlay p { 
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.5em;
+    opacity: 1.0 !important;
+    padding: 0 20px;
+}
+
+.Projects .see-all {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: #142155;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
