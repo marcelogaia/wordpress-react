@@ -5,6 +5,7 @@ import Header from "../Header";
 import Banner from "./Banner";
 import About from "./About";
 import Timeline from "./Timeline";
+import Skills from "./Skills";
 
 class Home extends Component {
   render() {
@@ -21,6 +22,7 @@ class Home extends Component {
         </Section>
         
         <Section title="Skills" name="skills">
+          <Skills />
         </Section>
         
         <Section title="Testimonials" name="testimonials" className="gray">
