@@ -7,6 +7,7 @@ import About from "./About";
 import Timeline from "./Timeline";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Testimonials from './Testimonials';
 
 class Home extends Component {
   render() {
@@ -28,6 +29,7 @@ class Home extends Component {
         </Section>
         
         <Section title="Testimonials" name="testimonials" className="gray">
+          <Testimonials />
         </Section>
         
         <Section title="Keep in touch" name="contact" className="blue">
