@@ -1,0 +1,25 @@
+.Section {
+    padding: 20px 0;
+}
+
+.Section h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.Section hr {
+    height: 3px;
+    width: 38px;
+    border: none;
+    background-color: #1d203f;
+    margin: 18px auto 23px;
+
+}
+
+.Section.gray { background: #f1f1f1; }
+
+.Section.blue { background: #122057; }
+.Section.blue h2{ color: white; }
