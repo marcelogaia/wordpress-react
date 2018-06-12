@@ -1,0 +1,27 @@
+.Testimonials {
+    color: #767477;
+    text-align: center;
+}
+
+.Testimonials div[class^="col-"]:hover {
+    color: #464447;
+}
+
+.Testimonials blockquote {
+    border-left: 5px solid #ddd;
+}
+
+.Testimonials h3 {
+        margin-top: 20px;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+.Testimonials p {
+    font-size: .9em;
+}
+
+.Testimonials img {
+    height: 79px;
+    min-width: 79px;
+}
