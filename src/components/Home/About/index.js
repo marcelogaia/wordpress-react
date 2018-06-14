@@ -8,16 +8,14 @@ import ico_linkedin from "./ico_lkdn.png";
 import ico_mail from "./ico_mail.png";
 
 class About extends Component {
-
-
 	render() {
 		const subtitle = "Plan it. Get it done. Make it better.";
 		const SocialLinks = (props) => {
 			return ( 
 			<ul className={props.className}>
-				<li><Link to="https://github.com/marcelogaia" target="_blank"><img src={ico_github} alt="Github" /></Link></li>
-				<li><Link to="#" target="_blank"><img src={ico_linkedin} alt="LinkedIn" /></Link></li>
-				<li><Link to="#" target="_blank"><img src={ico_mail} alt="Mail" /></Link></li>
+				<li><a href="https://github.com/marcelogaia" target="_blank"><img src={ico_github} alt="Github" /></a></li>
+				<li><a href="https://www.linkedin.com/in/marcelogaia" target="_blank"><img src={ico_linkedin} alt="LinkedIn" /></a></li>
+				<li><a href="#" target="_blank"><img src={ico_mail} alt="Mail" /></a></li>
 			</ul>
 			);
 		}

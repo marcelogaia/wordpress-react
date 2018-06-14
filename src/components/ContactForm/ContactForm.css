@@ -1,0 +1,26 @@
+.ContactForm input, .ContactForm textarea {
+    background: #ffffff;
+    opacity: 0.6;
+    border: 0;
+    padding: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 2px;
+    font-size: 1.2em;
+}
+
+.ContactForm textarea {
+    height: 120px;
+}
+
+.ContactForm button {
+    background: #122057;
+    padding: 12px 60px;
+    border: 0px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2px;
+    float: left;
+    font-size: 1.2em;
+}

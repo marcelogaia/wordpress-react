@@ -1,0 +1,14 @@
+.Contact p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: left;
+    color: #666666;
+    margin: 25px 0;
+}
+
+.Contact a {
+    color: #666666;
+    text-decoration: underline;
+}
