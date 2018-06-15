@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import portrait from './marcelo_portrait.jpg';
 import "./About.css";
 import ico_github from "./ico_github.png";
@@ -13,9 +12,9 @@ class About extends Component {
 		const SocialLinks = (props) => {
 			return ( 
 			<ul className={props.className}>
-				<li><a href="https://github.com/marcelogaia" target="_blank"><img src={ico_github} alt="Github" /></a></li>
-				<li><a href="https://www.linkedin.com/in/marcelogaia" target="_blank"><img src={ico_linkedin} alt="LinkedIn" /></a></li>
-				<li><a href="#" target="_blank"><img src={ico_mail} alt="Mail" /></a></li>
+				<li><a href="https://github.com/marcelogaia" target="_blank" rel="noopener noreferrer"><img src={ico_github} alt="Github" /></a></li>
+				<li><a href="https://www.linkedin.com/in/marcelogaia" target="_blank" rel="noopener noreferrer"><img src={ico_linkedin} alt="LinkedIn" /></a></li>
+				<li><a href="mailto:marcelo@marcelogaia.com.br" target="_blank" rel="noopener noreferrer"><img src={ico_mail} alt="Mail" /></a></li>
 			</ul>
 			);
 		}

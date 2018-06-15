@@ -23,7 +23,7 @@ class Projects extends Component {
         ];
 
         let map = projects.map((project,id) => 
-            <Col md={4} className="img-view">
+            <Col md={4} className="img-view" key={id}>
                 <img src={project.image} alt={project.name} />
                 <span className="overlay">
                     <h3>{project.name}</h3>
