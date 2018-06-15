@@ -16,7 +16,7 @@ class Skills extends Component {
         let list = [];
 
         for(let i = 0; i < skills.length; i++) {
-            list.push(<li><a href="javascript:void(0)">{skills[i]}</a></li>);
+            list.push(<li key={i}><button>{skills[i]}</button></li>);
         }
 
         return list;

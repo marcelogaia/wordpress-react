@@ -1,0 +1,71 @@
+.Timeline .Wrapper {
+    overflow: auto;
+    position: relative;
+    margin: 30px auto 0;
+}
+
+.Timeline canvas,.Timeline ul {
+    display: block;
+    float:left;
+}
+
+.Timeline .labels {
+    width: 90px;
+    padding: 4px 0 0 0;
+    height: 110px;
+    list-style: none;
+    border-right: 7px rgb(197,199,214) solid;
+    margin: 30px auto 0;
+}
+
+.Timeline .labels li {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-right: 11px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.Timeline .events li {
+    margin-top:10px;
+    display: block;
+    height: 10px;
+    padding:0;
+    margin: 0;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.Timeline .events li.work {
+    background-color: #313f87; 
+    top: 10px;
+    border: 1px #111f57 solid; 
+}
+
+.Timeline .events li.life {
+    background-color: #898fab; 
+    top: 30px;
+    border: 1px #313f87 solid; 
+}
+
+.Timeline .events li.edu {
+    background-color: #c4c7d5; 
+    top: 50px;
+    border: 1px #898fab solid; 
+}
+
+.Tooltip {
+    font-variant: small-caps;
+    font-size: 11px;
+}
+
+.Tooltip .rc-tooltip-inner {
+    padding: 1px 5px;
+    min-height: auto;
+    border-radius: 4px;
+    background: #313f87;
+    border-color: #111f57;
+    color: white;
+}

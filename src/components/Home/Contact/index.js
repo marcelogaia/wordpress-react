@@ -10,9 +10,7 @@ class Contact extends Component {
                 <Grid>
                     <Row>
                         <Col xs={12} sm={6}>
-                            <p>
-                                <h3>Thank you for coming here!</h3>
-                            </p>
+                            <h3>Thank you for coming here!</h3>
                             <p>
                                 If you want, we can talk about your <u>IT problems</u> and find the best solutions for <u>your company or project</u>.
                             </p>
