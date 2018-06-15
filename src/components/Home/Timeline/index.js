@@ -48,6 +48,12 @@ class Timeline extends Component {
 						start : moment("2016-09","YYYY-MM"),
 						end : moment("2017-03","YYYY-MM"),
 					},
+					{
+						title : "This portfolio",
+						subtitle : "React/Wordpress",
+						start : moment("2018-06","YYYY-MM"),
+						end : moment("2018-07","YYYY-MM"),
+					},
 				],
 				lifeEvents : [
 					{
@@ -185,10 +191,12 @@ class Timeline extends Component {
 		let yEnd =  context.canvas.height - 30;
 		context.strokeStyle = "red";
 		let thisYear = moment().year() - this.state.boundaries.first.year();
-		let thisMonth = moment().month();
+		let thisMonth = moment().month() + 1;
+		let thisDay = moment().date();
+		console.log(thisDay);
 		
-		context.moveTo(thisMonth*tickWidth + thisYear*12*tickWidth, yStart);
-		context.lineTo(thisMonth*tickWidth + thisYear*12*tickWidth, yEnd);
+		context.moveTo(thisDay/31*tickWidth + thisMonth*tickWidth + thisYear*12*tickWidth, yStart);
+		context.lineTo(thisDay/30*tickWidth + thisMonth*tickWidth + thisYear*12*tickWidth, yEnd);
 		context.stroke();
 
 	}
@@ -271,6 +279,7 @@ class Timeline extends Component {
 		const canvas = this.refs.canvas;
 		this.consts.context = canvas.getContext("2d");
 		canvas.width = this.consts.tickWidth * 12 * (this.state.totalYears+1);
+		canvas.parentElement.scrollLeft = canvas.width;
 
 		this.drawBackground();
 		this.drawYears();
