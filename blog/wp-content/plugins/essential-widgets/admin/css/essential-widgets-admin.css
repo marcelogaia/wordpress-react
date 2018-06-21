@@ -1,0 +1,20 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.image-holder img {
+	max-width: 100%;
+}
+
+.image-holder {
+	display: block;
+}
+
+.upload-media-button.button.button-primary {
+	margin-top: 8px;
+}
+
+.advanced-section {
+	display: none;
+}

@@ -48,6 +48,8 @@ class Timeline extends Component {
 						start : moment("2016-09","YYYY-MM"),
 						end : moment("2017-03","YYYY-MM"),
 					},
+				],
+				projects : [
 					{
 						title : "This portfolio",
 						subtitle : "React/Wordpress",
@@ -79,6 +81,12 @@ class Timeline extends Component {
 						subtitle : "Victoria BC",
 						start : moment("2014-03","YYYY-MM"),
 						end : moment("2014-04","YYYY-MM"),
+					},
+					{
+						title : "Project Manager",
+						subtitle : "Langara Software Developer Club",
+						start : moment("2017-09","YYYY-MM"),
+						end : moment("2018-04","YYYY-MM"),
 					},
 				],
 				education : [
@@ -132,13 +140,13 @@ class Timeline extends Component {
 
 		let context = this.consts.context;
 		let yStart = 0;
-		let yEnd =  context.canvas.height - 30;
+		let yEnd =  context.canvas.height - 20;
 
 		for(let currYear = 0; currYear <= yearDiff; currYear++) {
 			context.beginPath();
 			context.lineWidth = 3;
 			yStart = 0;
-			yEnd =  context.canvas.height - 30;
+			yEnd =  context.canvas.height - 20;
 			context.strokeStyle='rgb(154,158,173)';			
 			context.moveTo((currYear+1)*12*tickWidth, yStart);
 			context.lineTo((currYear+1)*12*tickWidth, yEnd);
@@ -150,10 +158,10 @@ class Timeline extends Component {
 				if(currMon % 3 === 0) {
 					yStart = 0;
 					context.strokeStyle='rgb(12,22,69)';	
-					yEnd = context.canvas.height - 55;			
+					yEnd = context.canvas.height - 35;			
 				} else {
 					yStart = 10;
-					yEnd = context.canvas.height - 65;
+					yEnd = context.canvas.height - 45;
 					context.strokeStyle="rgb(102,107,136)";
 				}
 
@@ -176,7 +184,7 @@ class Timeline extends Component {
 			ctx.fillText( 
 				this.state.boundaries.first.year()+i,
 				(i * 12 * this.consts.tickWidth) + 12/2*this.consts.tickWidth,
-				this.consts.context.canvas.height - 20
+				this.consts.context.canvas.height - 10
 			);
 		}
 	}
@@ -188,12 +196,11 @@ class Timeline extends Component {
 		context.beginPath();
 		context.lineWidth = 2;
 		let yStart = 0;
-		let yEnd =  context.canvas.height - 30;
+		let yEnd =  context.canvas.height - 20;
 		context.strokeStyle = "red";
 		let thisYear = moment().year() - this.state.boundaries.first.year();
 		let thisMonth = moment().month() + 1;
 		let thisDay = moment().date();
-		console.log(thisDay);
 		
 		context.moveTo(thisDay/31*tickWidth + thisMonth*tickWidth + thisYear*12*tickWidth, yStart);
 		context.lineTo(thisDay/30*tickWidth + thisMonth*tickWidth + thisYear*12*tickWidth, yEnd);
@@ -204,12 +211,17 @@ class Timeline extends Component {
 	createAllEvents() {
 		let workLife = this.state.data.workLife;
 		let lifeEvents = this.state.data.lifeEvents;
+		let projects = this.state.data.projects;
 		let education = this.state.data.education;
 
 		let events = [], key = 0;
 
 		for(let i in workLife) {
 			events.push(this.createEvent(workLife[i],"work",key++));
+		}
+
+		for(let i in projects) {
+			events.push(this.createEvent(projects[i],"projects",key++));
 		}
 
 		for(let i in lifeEvents) {
@@ -294,6 +306,7 @@ class Timeline extends Component {
 						<Col xs={12}>
 							<ul className="labels">
 								<li>Work Life</li>
+								<li>Projects</li>
 								<li>Life Events</li>
 								<li>Education</li>
 							</ul>

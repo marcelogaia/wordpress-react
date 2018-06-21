@@ -44,15 +44,21 @@
     border: 1px #111f57 solid; 
 }
 
+.Timeline .events li.projects {
+    background-color: #595fcb; 
+    top: 30px;
+    border: 1px #111f57 solid; 
+}
+
 .Timeline .events li.life {
     background-color: #898fab; 
-    top: 30px;
+    top: 50px;
     border: 1px #313f87 solid; 
 }
 
 .Timeline .events li.edu {
     background-color: #c4c7d5; 
-    top: 50px;
+    top: 70px;
     border: 1px #898fab solid; 
 }
 

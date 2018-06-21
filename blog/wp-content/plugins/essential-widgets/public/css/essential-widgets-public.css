@@ -1,0 +1,8 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.tagcloud.rounded-corners a {
+    border-radius: 10px;
+}

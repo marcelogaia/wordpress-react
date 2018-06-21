@@ -1,0 +1,230 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Photo Diary\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-13 14:16+0000\n"
+"PO-Revision-Date: 2018-04-13 14:31+0000\n"
+"Last-Translator: Mark <info@sitko-designing.de>\n"
+"Language-Team: Deutsch\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: functions.php:64
+msgid "Main Navigation"
+msgstr "Hauptnavigation"
+
+#: functions.php:93
+msgid "Standard Post"
+msgstr "Standard"
+
+#: functions.php:94
+msgid "Featured Overlay"
+msgstr "Überlappend"
+
+#: functions.php:95
+msgid "Full Content Width"
+msgstr "komplette Content Breite"
+
+#: functions.php:114
+msgid "Default Header Image"
+msgstr "Standard Headerbild"
+
+#: functions.php:140 functions.php:145
+msgid "by"
+msgstr "von"
+
+#: functions.php:163
+msgid "Blog Sidebar"
+msgstr "Blog Sidebar"
+
+#: functions.php:165
+msgid "These widgets are displayed on the blog or posts"
+msgstr "Diese Widgets werden auf Blog oder Beitragsseiten angezeigt"
+
+#: functions.php:175
+msgid "Page Sidebar"
+msgstr "Seiten Sidebar"
+
+#: functions.php:177
+msgid "These widgets are displyes on pages"
+msgstr "Diese Widgets werden auf richtigen Seiten angezeigt"
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Die Seite konnte nicht gefunden werden"
+
+#: 404.php:25
+msgid ""
+"Probably it&rsquo;s just a typing mistake or the page has been renamed, that "
+"happens sometimes."
+msgstr ""
+"Vermutlich ist es nur ein Tippfehler oder die Seite wurde umbenannt, das "
+"kommt vor."
+
+#: 404.php:26 template-parts/content-none.php:22
+msgid "Perhaps searching can help."
+msgstr "M&ouml;glicherweise kann die Suchfunktion dir helfen."
+
+#: index.php:33 front-page.php:41
+msgid "Back"
+msgstr "Zur&uuml;ck"
+
+#: index.php:34 front-page.php:42
+msgid "Next Page"
+msgstr "N&auml;chste Seite"
+
+#: comments.php:28
+msgid "Comments"
+msgstr "Kommentare"
+
+#: comments.php:68
+msgid "&larr; Older Comments"
+msgstr "&larr; &Auml;ltere Kommentare"
+
+#: comments.php:69
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommentare &rarr;"
+
+#: comments.php:70
+msgid "Comment navigation"
+msgstr "Kommentar Navigation"
+
+#: comments.php:76
+msgid "Comments are closed."
+msgstr "Kommentarfunktion geschlossen"
+
+#: search.php:17
+msgid "Search result"
+msgstr "Suchergebnisse"
+
+#: searchform.php:15
+msgid " Looking for"
+msgstr "Suche nach"
+
+#: inc/customizer.php:21
+msgid "General"
+msgstr "Allgemein"
+
+#: inc/customizer.php:33
+msgid "Sidebar position"
+msgstr "Sidebar Position"
+
+#: inc/customizer.php:38
+msgid "sidebar right"
+msgstr "sidebar rechts"
+
+#: inc/customizer.php:39
+msgid "no sidebar"
+msgstr "ohne sidebar"
+
+#: inc/customizer.php:51
+msgid "Footer Credit"
+msgstr "Footer Credit"
+
+#: inc/customizer.php:65
+msgid "Headerstyle"
+msgstr "Header Stil"
+
+#: inc/customizer.php:66
+msgid "Choose your Headerstyle"
+msgstr "W&auml;hle deinen Headerstyle aus"
+
+#: inc/customizer.php:71
+msgid "full-width"
+msgstr "volle breite"
+
+#: inc/customizer.php:83
+msgid "Show header on posts?"
+msgstr "Header für Beiträge anzeigen?"
+
+#: inc/customizer.php:88
+msgid "Yes"
+msgstr "Ja"
+
+#: inc/customizer.php:89
+msgid "No"
+msgstr "Nein"
+
+#: inc/customizer.php:101
+msgid "Primary Color"
+msgstr "Hauptfarbe"
+
+#: inc/customizer.php:121
+msgid "Social-Media"
+msgstr "Social-Media"
+
+#: inc/customizer.php:122
+msgid "Here you can add your social media profiles"
+msgstr "Hier kannst du deine Social Media Profile hinzuf&uuml;gen."
+
+#. Name of the template
+msgid "No Sidebar"
+msgstr "Ohne Sidebar"
+
+#: template-parts/content-single.php:36 template-parts/content-page.php:25
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: template-parts/content-single.php:44 template-parts/content.php:41
+#: template-parts/content-search.php:43
+msgid "written by"
+msgstr "geschrieben von"
+
+#: template-parts/content-single.php:44 template-parts/content.php:41
+#: template-parts/content-search.php:43
+msgid "Posted in"
+msgstr "Ver&ouml;ffentlicht in"
+
+#: template-parts/content-single.php:51
+msgid "Previous Post"
+msgstr "Vorheriger Beitrag"
+
+#: template-parts/content-single.php:54
+msgid "Next Post"
+msgstr "N&auml;chster Beitrag"
+
+#: template-parts/content-none.php:17
+msgid "Oops! There is something wrong."
+msgstr "Oops! Da ist etwas schief gelaufen."
+
+#: template-parts/content-none.php:21
+msgid "It seems can&rsquo;t find what you&rsquo;re looking for."
+msgstr "Leider konnten wir nicht finden wonach du suchst."
+
+#: template-parts/content.php:39 template-parts/content-search.php:41
+msgid "Read more"
+msgstr "mehr lesen"
+
+#. Name of the theme
+msgid "Photo Diary"
+msgstr "Photo Diary"
+
+#. Description of the theme
+msgid ""
+"Photo-Diary is a full responsive and minimalistic Blog for Photographer and "
+"Traveler. The design focus is on typographie, awesome pictures and a "
+"minimalistic style and color schema. You can custom the main color, include "
+"your custom header images and add your social media profiles. The Theme is "
+"translation-ready for german."
+msgstr ""
+"Photo-Diary ist ein voll responsives und minimalistisches Blog Theme für "
+"Fotografen und Reisende. Der Design fokus liegt auf Typografie, tollen "
+"Bildern und einem minimalistischen Stil. Du kannst die Hauptfarben anpassen, "
+"deine eigenen Header-Bilder einfügen und deine Social Media Profile "
+"verlinken. Das Theme ist ins deutsche übersetzt wurden. "
+
+#. URI of the theme
+msgid "https://photo-diary.sitko-designing.de"
+msgstr "https://photo-diary.sitko-designing.de"
+
+#. Author of the theme
+msgid "Mark Sitko"
+msgstr "Mark Sitko"
+
+#. Author URI of the theme
+msgid "https://www.sitko-designing.de"
+msgstr "https://www.sitko-designing.de"

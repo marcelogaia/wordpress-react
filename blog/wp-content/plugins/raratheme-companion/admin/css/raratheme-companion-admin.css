@@ -1,0 +1,387 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+img{
+	max-width: 100%;
+	height: auto;
+}
+ 
+.rrtc-search-icon {
+    width: 100%;
+}
+
+select[id*="widget-raratheme_image_widget-"], 
+select[id*="widget-raratheme_popular_post-"] {
+    width: 100%;
+}
+
+.rara-font-awesome-list {
+    margin-bottom: 10px
+}
+
+.rara-font-awesome-list ul {
+    text-align: center;
+    height: 300px;
+    margin: 0
+}
+
+.rara-font-awesome-list li {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.rara-font-awesome-list li:hover,
+.rara-font-awesome-list li.selected {
+    background: #F6F6F6;
+}
+
+.rara-font-awesome-list li .fa {
+    font-size: 32px;
+    line-height: 60px;
+}
+
+.rara-font-awesome-list {
+    margin-bottom: 10px
+}
+
+.rara-font-awesome-list ul {
+    text-align: center;
+    height: 300px;
+    margin: 0
+}
+
+.rara-font-awesome-list li {
+    width: 60px;
+    height: 60px;
+}
+
+.rara-font-awesome-list li:hover,
+.rara-font-awesome-list li.selected {
+    background: #F6F6F6;
+}
+
+.rara-font-awesome-list li .fa {
+    font-size: 32px;
+    line-height: 60px;
+}
+
+.rara-remove-icon {
+    background: url("../images/ico-delete.png");
+    top: 0;
+    display: block;
+    height: 16px;
+    padding: 0;
+    position: absolute;
+    text-indent: -9999px;
+    width: 16px;
+    cursor: pointer;
+    right: 0;
+}
+.rara-remove-image {
+    background: url("../images/ico-delete.png");
+    display: block;
+    height: 16px;
+    right: 0;
+    padding: 0;
+    position: absolute;
+    text-indent: -9999px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.rara-screenshot{margin: 20px 0 10px; position: relative;}
+
+.rara-remove-image{
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.rara-upload-button{
+	margin-top: 10px !important;
+}
+
+.widget-control-actions{margin-top: 10px;}
+
+.icon-receiver{
+	font-size: 35px;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+	background: #F1F1F1;
+    position: relative;
+}
+
+.rara-font-awesome-list ul{
+	overflow: auto;
+	height: 315px;
+    border: 1px solid #eee;
+}
+
+.rara-font-group li{
+	display: inline-block;
+}
+.raratheme-social-template{
+    display: none;
+}
+.cta-bg-color>.wp-picker-container>a {
+    display: none;
+}
+
+/*=======================
+WIDGET CLIENT FAQ
+=======================*/
+.widget-client-faq-repeater .faqs-repeat {
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+}
+.widget-client-faq-repeater .faqs-repeat .cross {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    font-size: 13px;
+    background: #fff;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    color: #f00;
+    cursor: pointer;
+}
+.widget-client-faq-repeater .faqs-repeat label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.widget-client-faq-repeater .faqs-repeat input[type="text"] {
+    margin-bottom: 30px;
+}
+.widget-client-faq-repeater .faqs-repeat textarea {
+    width: 100%;
+    height: 80px;
+}
+.widget-content label[for="widget-raratheme_companion_faqs_widget-2-toggle"] {
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+/*========================
+WIDGET CLIENT LOGO
+========================*/
+.widget-client-logo-repeater .link-image-repeat {
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+.widget-client-logo-repeater .link-image-repeat .cross {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #f5f5f5;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    color: #f00;
+    border-radius: 100%;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+.widget-client-logo-repeater .link-image-repeat label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.widget-client-logo-repeater .link-image-repeat label + br {
+    display: none;
+}
+.widget-client-logo-repeater .link-image-repeat .rara-upload-button {
+    margin-top: 0 !important;
+}
+.widget-client-logo-repeater .link-image-repeat .rara-screenshot {
+    display: block;
+    width: 100px;
+}
+.widget-client-logo-repeater .link-image-repeat input[value="Change"] + .rara-screenshot {
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.widget-client-logo-repeater .link-image-repeat .rara-screenshot a.rara-remove-image {
+    top: -5px;
+    right: 5px;
+}
+
+.rtc-icons-list {
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    z-index: 9999;
+    width: 225px;
+    border: 1px solid #ddd;
+    height: 300px;
+    overflow: scroll;
+    margin: 0 -5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+.rtc-icons-list li {
+    padding: 10px 5px;
+    width: 33.33%;
+    list-style: none;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.button-one-info label, .button-two-info label {
+    width: 100px;
+    display: inline-block;
+}
+.button-one-info label + input[type="text"], 
+.button-two-info label + input[type="text"] {
+    width: calc(100% - 106px);
+}
+.raratheme-social-icon-wrap .raratheme-social-icons-field-handle {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+.raratheme-social-icon-wrap .del-icon.dashicons-no {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin-left: 10px;
+    background: #e9e9e9;
+    display: inline-block;
+    font-size: 14px;
+    color: #cc444d;
+    cursor: pointer;
+}
+.widget-note {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+label[for="widget-rbp_author_widget-3-link_url"] {
+    margin-top: 20px;
+    display: block;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap {
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    position: relative;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap .rtc-social-links-field-handle {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 17px;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap label {
+    display: block;
+    font-weight: 600;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap .example-text {
+    display: block;
+    margin-bottom: 10px;
+    color: #777;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap .rtc-social-links-field-handle + label, 
+.rtc-sortable-links .rtc-social-icon-wrap .rtc-social-links-field-handle + label + .example-text {
+    margin-left: 25px;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap input[type="text"] {
+    width: 100%;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap input[type="text"] + label {
+    margin-top: 20px;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap .del-rtc-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    background: #e5e5e5;
+    cursor: pointer;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap .rtc-icons-list {
+    top: 100px;
+    left: 26px;
+    width: auto;
+    right: 24px;
+    padding: 20px;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap .rtc-icons-list li {
+    width: 20%;
+    font-size: 23px;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap .rtc-icons-list li:hover {
+    background: #f5f5f5;
+}
+
+.rtc-sortable-links .rtc-social-icon-wrap .rtc-icons-list #remove-icon-list {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 16px;
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    background: #e5e5e5;
+    color: red;
+    cursor: pointer;
+}
+
+.rtc-option-side-note {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+input.small-text {
+    width: 100%;
+}

@@ -1,32 +1,4 @@
-.ProjectPage {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.5);
-    z-index: 11;
-    transition: 300ms;
-    /* opacity: 0;
-    display: none; */
-}
-
-.ProjectPage.open {
-    opacity: 1;
-}
-
-.ProjectPage .info {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    background: white;
-    border: 1px #d2d2d2 solid;
-    border-radius: 2px;
-}
-
-.ProjectPage .info .closeBtn {
+.ProjectPage .closeBtn {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -35,8 +7,8 @@
     cursor: pointer;
 }
 
-.ProjectPage .info .closeBtn::before, 
-.ProjectPage .info .closeBtn::after {
+.ProjectPage .closeBtn::before, 
+.ProjectPage .closeBtn::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -48,8 +20,12 @@
     transform: rotate(45deg);
 }
 
-.ProjectPage .info .closeBtn::after {
+.ProjectPage .closeBtn::after {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+
+.ProjectPage .carousel img {
+    width: 100%;
 }

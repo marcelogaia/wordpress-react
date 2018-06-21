@@ -1,0 +1,32 @@
+/**
+ * All of the CSS for your admin-dashboard functionality should be
+ * included in this file.
+ */
+
+.display_none, .more-options {
+    display: none;
+}
+
+#add-catch-instagram-feed-gallery-widget-shortcode {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#add-catch-instagram-feed-gallery-widget-shortcode img {
+    height: 22px;
+    padding: 2px 4px;
+    vertical-align: top;
+}
+
+#TB_window {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#TB_ajaxContent form#catch-instagram-feed-gallery-widget-shortcode-form {
+    padding-bottom: 20px;
+}
+
+.show-more.button {
+    margin: 10px 0 5px 0;
+}

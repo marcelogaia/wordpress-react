@@ -4,10 +4,13 @@
     cursor: pointer;
     overflow: hidden;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .Projects .img-view img {
     width: 100%;
+    border: 1px #cccccc solid;
+    padding: 2px;
 }
 
 .Projects .img-view .overlay {

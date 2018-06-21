@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "moment": "^2.22.2",
     "rc-tooltip": "^3.7.2",
     "react": "^16.4.0",
@@ -20,6 +21,7 @@
     "deploy": "yarn build && node deploy"
   },
   "devDependencies": {
-    "ftp-deploy": "^2.1.1"
+    "ftp-deploy": "^2.1.1",
+    "promise-ftp-common": "^1.1.5"
   }
 }

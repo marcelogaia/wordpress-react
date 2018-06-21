@@ -4,8 +4,10 @@ import { Grid, Row, Col } from "react-bootstrap";
 import "./Projects.css";
 import ProjectPage from "./ProjectPage";
 import Modal from "react-modal";
+import axios from "axios";
 
 Modal.defaultStyles.overlay.zIndex = 11;
+Modal.defaultStyles.overlay.background = "rgba(0,0,0,0.8)";
 
 class Projects extends Component {
 
@@ -14,7 +16,8 @@ class Projects extends Component {
     
         this.state = {
           modalIsOpen: false,
-          currentProject: 1
+          currentProject: 1,
+          projects: []
         };
     
         this.openModal = this.openModal.bind(this);
@@ -22,32 +25,36 @@ class Projects extends Component {
         this.closeModal = this.closeModal.bind(this);
     }
 
-    listProjects() {
-        let projects = [
-            {
-                id      : 1,
-                name    : "Project 1",
-                image   : "http://marcelogaia.com.br/layout/assets/Home_HmgC5Bq.280x170.PNG",
-                description : "Simple and short project description. Simple and short project description. Simple and short project description. Simple and short project description."
-            },{
-                id      : 2,
-                name    : "Project 2",
-                image   : "http://marcelogaia.com.br/layout/assets/Home_RqasiXc.280x170.PNG",
-                description : "Simple and short project description. Simple and short project description. Simple and short project description. Simple and short project description."
-            },{
-                id      : 3,
-                name    : "Project 3",
-                image   : "http://marcelogaia.com.br/layout/assets/Home_yBu0BCM.280x170.PNG",
-                description : "Simple and short project description. Simple and short project description. Simple and short project description. Simple and short project description."
-            }
-        ];
+    componentDidMount() {
+        axios.get("http://marcelogaia.com.br/blog/wp-json/wp/v2/jetpack-portfolio?_embed")
+        .then(response => {
+            const projects = response.data.slice(0, 6).map(p => {
+                let imageInfo = p._embedded["wp:featuredmedia"],
+                    image = "";
 
-        let map = projects.map((project,id) => 
-            <Col md={4} className="img-view" key={id}>
-                <img src={project.image} alt={project.name} />
-                <span className="overlay" onClick={this.openModal}>
-                    <h3>{project.name}</h3>
-                    <p>{project.description}</p>
+                if (imageInfo !== undefined) {
+                    image = imageInfo[0].media_details.sizes.marcelogaia_project_thumb.source_url;
+                }
+                
+                return {
+                    id : p.id,
+                    name : p.title.rendered,
+                    image : image,
+                    description : "Simple and short project description. Simple and short project description. Simple and short project description. Simple and short project description."
+                };
+            });
+
+            this.setState({projects : projects});
+        }).catch(error => console.log(error));
+    }
+
+    listProjects() {
+        let map = this.state.projects.map((p,i) => 
+            <Col md={4} className="img-view" key={i}>
+                <img src={`${p.image}?resize=3602C225`} alt={p.name} />
+                <span className="overlay" onClick={() => this.openModal(p.id)}>
+                    <h3>{p.name}</h3>
+                    <p>{p.description}</p>
                 </span>
             </Col>
         );
@@ -63,13 +70,16 @@ class Projects extends Component {
 
     openModal(projectId) {
         this.setState({
-            modalIsOpen: true
+            modalIsOpen: true,
+            currentProject: projectId
         });
     }
 
     afterOpenModal() {
         // references are now sync'd and can be accessed.
-        this.refs.page.projectId = this.state.projectId;
+        this.refs.page.setState({
+            projectId : this.state.currentProject
+        })
     }
 
     closeModal() {
@@ -77,10 +87,9 @@ class Projects extends Component {
     }
 
 	render() {
-        const customStyles = {
-            zIndex : 11
-        };
         
+        const customStyles = {};
+
 		return (
             <div className="Projects">
                 {this.listProjects()}
@@ -90,11 +99,10 @@ class Projects extends Component {
                 <Modal isOpen={this.state.modalIsOpen}
                     onAfterOpen={this.afterOpenModal}
                     onRequestClose={this.closeModal}
+                    contentLabel="test"
                     style={customStyles}
-                    contentLabel=""
                     appElement={document.getElementById('root')}
                 >
-                    <button onClick={this.closeModal}>close</button>
                     <ProjectPage ref="page" closeModal={this.closeModal} />
                 </Modal>
             </div>

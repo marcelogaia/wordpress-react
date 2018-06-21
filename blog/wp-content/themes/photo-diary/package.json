@@ -1,0 +1,28 @@
+{
+  "name": "sitko-designing",
+  "version": "1.0.0",
+  "description": "Photo Diary - WordPress Theme",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mark sitko",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.0.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-zip": "^0.17.1",
+    "livereload-js": "^2.2.2",
+    "pixrem": "^3.0.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "iOS >= 8"
+  ]
+}

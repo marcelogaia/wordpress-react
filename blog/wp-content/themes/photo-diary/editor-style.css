@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;;
+}
+
+#tinymce {
+  font-family: 'Josefin Slab', serif;;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin: 1rem;
+  padding: 0;
+}
+
+#tinymce p {
+  line-height: 150%;
+}
+
+#tinymce a {
+  text-decoration: none;
+  color: #f44336;
+}
+
+#tinymce h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+#tinymce h1, #tinymce h2, #tinymce h4 {
+  font-weight: 600;
+}
+
+#tinymce h3, #tinymce h5, #tinymce h6 {
+  font-weight: 400;
+
+}
+#tinymce h2, #tinymce h3, #tinymce h4, #tinymce h5, #tinymce h6 {
+  text-transform: uppercase;
+}
+
+#tinymce h1 {
+  font-size: 3.75rem;
+  letter-spacing: .2px;
+}
+
+#tinymce h2 {
+  font-size: 2.375rem;
+}
+
+#tinymce h3 {
+  font-size: 1.5rem;
+}
+
+#tinymce h4 {
+  font-size: 1.125rem;
+}
+
+#tinymce h5 {
+  font-size: 1rem;
+}
+
+#tinymce h6 {
+  font-size: .875rem;
+}
+
+#tinymce ol, #tinymce ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: .5rem auto;
+  }
+
+#tinymce table {
+  width: 100%;
+  text-align: left;
+  }
+
+#tinymce tr, #tinymce th, #tinymce td {
+  padding: .5rem;
+  }
+
+#tinymce blockquote {
+  background: #fafafa;
+  font-style: italic;
+  font-weight: 600;
+  padding: .5rem;
+  width: 62.042%;
+  text-align: center;
+}
+
+#tinymce blockquote p:first-child:before, #tinymce blockquote p:last-child:after {
+  content: "''";
+}
+
+#tinymce hr {
+    width: 100%;
+    margin: 1rem auto;
+    height: 1px;
+    background: #f44336;
+    border: none;
+}
